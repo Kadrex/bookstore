@@ -1,0 +1,17 @@
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 35px;
+}
+
+.sidenav {
+  min-width: 240px;
+}
+
+a mat-icon {
+  padding-right: 15px;
+}
+
+.container {
+  // https://stackoverflow.com/questions/26275982/putting-moz-available-and-webkit-fill-available-in-one-width-css-property
+  min-height: -moz-available;
+  min-height: -webkit-fill-available;
+}

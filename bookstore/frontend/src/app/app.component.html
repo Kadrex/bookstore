@@ -1,0 +1,22 @@
+<!-- Navbar -->
+<mat-toolbar>
+  <button (click)="drawer.toggle()" mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a mat-button color="primary" routerLink="/" translate>title</a>
+</mat-toolbar>
+
+<!-- Body -->
+<!-- https://material.angular.io/components/sidenav/overview -->
+<mat-drawer-container autosize class="container">
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <mat-nav-list>
+      <!-- https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/ -->
+      <a mat-list-item routerLink="/books"><mat-icon>library_books</mat-icon>Books</a>
+      <a mat-list-item routerLink="/checkouts"><mat-icon>local_library</mat-icon>Checkouts</a>
+      <a mat-list-item routerLink="/favorites"><mat-icon>favorite</mat-icon>Favorite books</a>
+      <a mat-list-item routerLink="/late-checkouts"><mat-icon>schedule</mat-icon>Late checkouts</a>
+    </mat-nav-list>
+  </mat-drawer>
+  <router-outlet></router-outlet>
+</mat-drawer-container>

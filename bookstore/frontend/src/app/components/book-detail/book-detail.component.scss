@@ -1,0 +1,19 @@
+.container {
+  min-width: 460px;
+  margin: 6em auto;
+  width: 39%;
+  max-width: max-content;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.delete-button-container {
+  width: min-content;
+  display: inline-block;
+}
+
+.not-last-button-in-row {
+  margin-right: 20px;
+}

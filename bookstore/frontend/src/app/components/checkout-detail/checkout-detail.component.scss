@@ -1,0 +1,22 @@
+.container {
+  min-width: 400px;
+  margin: 6em auto;
+  width: 33%;
+  max-width: max-content;
+}
+
+.not-last-button-in-row {
+  margin-right: 20px;
+}
+
+.overdue {
+  color: red;
+}
+
+mat-card-title {
+  cursor: pointer;
+}
+
+mat-card-title:hover {
+  text-decoration: underline;
+}
